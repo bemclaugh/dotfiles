@@ -1,0 +1,73 @@
+Host gagen
+   Hostname 128.171.104.20
+   Port 7722
+   IdentityFile ~/.ssh/id_rsa
+Host gagenVNC
+   Hostname 128.171.104.20
+   Port 7722
+   Compression yes
+   LocalForward 5901 localhost:5900
+   IdentityFile ~/.ssh/id_rsa
+Host gagen2
+   Hostname 128.171.104.51
+   Port 7722
+   IdentityFile ~/.ssh/id_rsa
+Host gagen2VNC
+   Hostname 128.171.104.51
+   Port 7722
+   Compression yes
+   LocalForward 5901 localhost:5900
+   IdentityFile ~/.ssh/id_rsa
+Host webfactional
+   Hostname 108.59.11.98
+   User bem
+   IdentityFile ~/.ssh/id_dsa_webfactional
+#Host riastradh
+#   Hostname 128.171.104.20
+#   HostKeyAlias riastradh
+#   Port 7722
+#   IdentityFile ~/.ssh/id_rsa
+Host bbl
+   Hostname bbl.ancl.hawaii.edu
+   Port 22
+Host pacioosVM
+   Hostname 128.171.128.2
+   User brian
+   Port 874
+#Host riastradhVNC
+#   Hostname 128.171.104.20
+#   User brian
+#   Port 7722
+#   Compression yes
+#   LocalForward 5901 localhost:5900
+#   IdentityFile ~/.ssh/id_rsa
+Host knProc
+   #Hostname 168.105.160.139
+   Hostname 166.122.238.30
+   User brian
+   Port 10522
+   Compression yes
+   HostKeyAlias knProc
+   IdentityFile ~/.ssh/id_rsa
+Host knProcVNC
+   Hostname 168.105.160.139
+   User brian
+   #User kilonalu
+   Port 10522
+   Compression yes
+   HostKeyAlias knProc
+   LocalForward 5901 localhost:5900
+   IdentityFile ~/.ssh/id_rsa
+Host knProcX
+   Hostname 168.105.160.139
+   User brian
+   Port 10522
+   ForwardX11 yes
+   Compression yes
+   HostKeyAlias knProc
+   IdentityFile ~/.ssh/id_rsa
+Host moli
+   Hostname moli.soest.hawaii.edu
+   User brian
+   Compression yes
+   IdentityFile ~/.ssh/id_dsa_moli

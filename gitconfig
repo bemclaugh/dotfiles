@@ -1,0 +1,21 @@
+[include]
+	path = ~/.gitconfig_sys
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[merge]
+	tool = vimdiff
+[alias]
+	st = status --short
+	cm = commit -m
+	llg = log --graph --color --decorate --date-order --stat
+	lg  = log --graph --color --pretty='format:%C(yellow)%h%C(cyan)%d %Creset%s %C(blue)%an, %ar' --date-order
+	lga = log --graph --color --pretty='format:%C(yellow)%h%C(cyan)%d %Creset%s %C(blue)%an, %ar' --date-order --all
+	co = checkout
+[push]
+	default = current
+[color]
+        ui = auto
+[user]
+	name = Brian McLaughlin
+	email = bemclaugh@gmail.com
