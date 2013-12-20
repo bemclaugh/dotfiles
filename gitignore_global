@@ -1,3 +1,7 @@
+# ipython notebook files #
+##########################
+*.ipynb
+
 # Compiled source #
 ###################
 *.com
