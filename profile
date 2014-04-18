@@ -1,6 +1,6 @@
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-source $HOME/.local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 PATH=/opt/boxen/homebrew/bin:/usr/local/bin:/usr/local/sbin::$PATH
 PATH=~/.local/bin:$PATH
