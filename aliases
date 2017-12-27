@@ -1,2 +1,3 @@
 alias ll="ls -alGF"
 alias ls="ls -GF"
+alias d-c="docker-compose"

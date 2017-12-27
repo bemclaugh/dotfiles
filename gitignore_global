@@ -1,5 +1,25 @@
-# ipython notebook files #
-##########################
+# Python packaging #
+####################
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+build/
+
+# test coverage #
+#################
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+# ipython notebooks cruft #
+###########################
+.ipynb_checkpoints
 *.ipynb
 
 # Compiled source #
@@ -11,6 +31,7 @@
 *.o
 *.so
 *.pyc
+__pycache__/
 
 # Packages #
 ############
@@ -30,6 +51,7 @@
 *.log
 *.sql
 *.sqlite
+sqlite.db
 
 # OS generated files #
 ######################
@@ -51,6 +73,7 @@ Thumbs.db
 *.swp
 .project
 .pydevproject
+.anaconda
 
 # my snippets dir #
 ###################
@@ -67,4 +90,22 @@ static/cache
 # VIM #
 #######
 .netrwhist
+
+# node_modules #
+################
+/node_modules/
+
+# python pickled objects #
+##########################
+*.pk
+
+# Salesforde SFDX #
+###################
+.sfdx
+.salesforce
+.idea
+
+# VS Code #
+###########
+.vscode/
 
