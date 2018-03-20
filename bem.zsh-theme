@@ -18,13 +18,5 @@ case ${SOLARIZED_THEME:-dark} in
     *)     bkg=black;;
 esac
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" [%{%B%F{blue}%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{green}%}]"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{%F{red}%}*%{%f%k%b%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-
-RPROMPT='%* !%{%B%F{cyan}%}%!%{%f%k%b%}'
-PROMPT='%{%f%k%b%}
-%{%B%F{green}%}%{%b%F{yellow}%K{${bkg}}%}%~%{%B%F{green}%}$(git_prompt_info)%E%{%f%k%b%}
-%{%K{${bkg}}%}$(_prompt_char)%{%K{${bkg}}%} %#%{%f%k%b%} '
-
+PROMPT='%B%~%b$(git_super_status)
+%# '

@@ -40,13 +40,14 @@ bindkey '^N' history-search-forward
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx python brew sublime docker)
+plugins=(git osx python virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source ~/.aliases
 source ~/.profile
+source ~/git/zsh-git-prompt/zshrc.sh
 #unsetopt correct_all
 
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
@@ -56,3 +57,5 @@ PATH="$HOME/.node/bin:$PATH"
 PATH="$HOME/.rvm/bin:$PATH"
 export PATH
 
+# added by travis gem
+[ -f /Users/brian/.travis/travis.sh ] && source /Users/brian/.travis/travis.sh
