@@ -1,15 +1,18 @@
 {
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"user":
 	{
-		"@disable": true,
-		"debug": true,
+		"debug": false,
 		"delay": 0.25,
 		"error_color": "D02000",
 		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
 		"gutter_theme_excludes":
 		[
 		],
-		"lint_mode": "background",
+		"lint_mode": "manual",
 		"linters":
 		{
 			"csslint":
@@ -61,7 +64,7 @@
 			},
 			"pep8":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -71,10 +74,28 @@
 				"ignore": "",
 				"max-line-length": null,
 				"select": ""
+			},
+			"pylint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"disable": "",
+				"enable": "",
+				"excludes":
+				[
+				],
+				"paths":
+				[
+				],
+				"rcfile": "",
+				"show-codes": false
 			}
 		},
-		"mark_style": "outline",
+		"mark_style": "stippled underline",
 		"no_column_highlights_line": false,
+		"passive_warnings": false,
 		"paths":
 		{
 			"linux":
