@@ -19,3 +19,15 @@
 [user]
 	name = Brian McLaughlin
 	email = bemclaugh@gmail.com
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[init]
+	defaultBranch = main

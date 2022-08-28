@@ -69,7 +69,7 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,6 +98,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+# echo 'eval "$(rbenv init -)"'
+
+function gam() { "/Users/brian/bin/gam/gam" "$@" ; }
+
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+
+export VAULT_ADDR=https://vault.rg-infra.com
+
+export GITHUB_TOKEN=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
